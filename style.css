@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500&display=swap');
+
+:root{
+
+    /* ### Primary */
+    --Desaturated-Red: hsl(0, 36%, 70%);
+    --Soft-Red : hsl(0, 93%, 68%);
+
+    /* ### Neutral */
+    --Dark-Grayish-Red: hsl(0, 6%, 24%);
+
+    /* ### Gradients */
+    --linear-gradients-1: linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%);
+    --Linear-gradients-2: linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    width: 100%;
+}
+
+.container main .desc {
+    text-align: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    line-height: 21px;
+}
+
+.container main h2 {
+    letter-spacing: 0.8rem;
+    text-align: center;
+    padding: 1.6rem 1.6rem 1rem 1.6rem;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.container main .input-email {
+    border-radius: 1rem;
+}
+
+.container main p , .container main h2 span {
+    color: var(--Desaturated-Red);
+}
+
+.container main input {
+    
+}
+
+
+
+.container .hero {
+    width: 100%;
+}
+
+
+
+@media (min-width: 480px) {
+    
+}
+
+
+@media (min-width: 768px) {
+    
+}
+
+@media (min-width: 1024px) {
+    
+}
+
+@media (min-width: 1200px) {
+    
+}
