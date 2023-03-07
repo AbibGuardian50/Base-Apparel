@@ -19,13 +19,15 @@
 
   <div class="container">
 
-    
+    <header class="mobile">
+        <img src="./images/logo.svg" alt="logo">
+      </header>
 
     <img class="hero" src="./images/hero-mobile.jpg" alt="img">
 
     <main>
 
-      <header>
+      <header class="desktop">
         <img src="./images/logo.svg" alt="logo">
       </header>
     
@@ -36,8 +38,8 @@
       Add your email below to stay up-to-date with announcements and our launch deals.
       </p>
 
-      <form class="input-email" action="">
-        <input class="email-text" type="email" name="Email Address" id="" placeholder="Email Address">
+      <form name="input-email" class="input-email" action="" onsubmit="return validateForm()">
+        <input name="email" class="email-text" type="email" name="Email Address" id="" placeholder="Email Address">
         <button type="submit">
           <img class="arrow-svg" src="./images/icon-arrow.svg" alt="">
         </button>

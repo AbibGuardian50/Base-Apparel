@@ -30,6 +30,17 @@ body {
     width: 100%;
     background: var(--linear-gradients-1);
     min-height: 100vh;
+    overflow-x: auto;
+}
+
+.container .desktop {
+    display: none;
+}
+
+.container .mobile {
+    display: block;
+    padding-top: 1.6rem;
+    padding-bottom: 1.6rem;
 }
 
 .container main .desc {
@@ -38,15 +49,15 @@ body {
     padding-right: 1rem;
     line-height: 21px;
     font-weight: 400;
-    padding-bottom: 1.6rem;
 }
 
 .container main h1 {
     letter-spacing: 0.8rem;
+    padding: 4.5rem 1rem 1rem 1rem;
     text-align: center;
-    padding: 9rem 1.6rem 1rem 1.6rem;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 2.75rem;
+    margin: auto;
 }
 
 .container main .input-email .arrow-svg {
@@ -58,8 +69,8 @@ body {
 
 .container main .input-email button {
     position: absolute;
-    right: 43px;
-    top: -3px;
+    right: 75px;
+    top: 12px;
     cursor: pointer;
 }
 
@@ -85,6 +96,7 @@ body {
 form {
     position: relative;
     width: 100%;
+    padding: 1rem;
 }
 
 .container main .email-text {
@@ -112,17 +124,27 @@ form {
 
     
     main {
-        padding-left: 3rem;
-        width: 55%;
-        padding-right: 3rem;
-        padding-top: 2.5rem;
-        margin: 0 auto 0 0;
+    /* padding-left: 3rem; */
+    width: 50%;
+    padding-right: 3rem;
+    padding-top: 2.5rem;
+    margin: 0 auto;
     }
 
     .container .hero {
         display: none;
     }
+
+    .container .desktop {
+        display: block;
+    }
     
+    .container main .input-email button {
+        position: absolute;
+        right: 65px;
+        cursor: pointer;
+        top: -3px;
+    }
 
     .photo-section{
         display: block;
@@ -133,7 +155,7 @@ form {
     }
 
     .container main h1 {
-        padding-left: 0;
+        padding: 9rem 1.6rem 1.5rem 0rem;
         font-size: 4.75rem;
         text-align: left;
     }
@@ -141,9 +163,16 @@ form {
 
     .container main .desc {
         text-align: left;
-        padding-left: 0;
-        padding-right: 1rem;
         line-height: 21px;
+        padding: 0 1rem 1.5rem 0;
+    }
+
+    .container .mobile {
+        display: none;
+    }
+
+    form {
+        padding: 0;
     }
 
     
