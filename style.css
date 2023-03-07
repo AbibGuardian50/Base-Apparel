@@ -10,8 +10,8 @@
     --Dark-Grayish-Red: hsl(0, 6%, 24%);
 
     /* ### Gradients */
-    --linear-gradients-1: linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%);
-    --Linear-gradients-2: linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%);
+    --linear-gradients-1: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    --Linear-gradients-2: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
 
 }
 
@@ -28,6 +28,8 @@ body {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 16px;
     width: 100%;
+    background: var(--linear-gradients-1);
+    min-height: 100vh;
 }
 
 .container main .desc {
@@ -35,32 +37,63 @@ body {
     padding-left: 1rem;
     padding-right: 1rem;
     line-height: 21px;
+    font-weight: 400;
+    padding-bottom: 1.6rem;
 }
 
-.container main h2 {
+.container main h1 {
     letter-spacing: 0.8rem;
     text-align: center;
-    padding: 1.6rem 1.6rem 1rem 1.6rem;
-    font-weight: 500;
+    padding: 9rem 1.6rem 1rem 1.6rem;
+    font-weight: 400;
     font-size: 24px;
 }
 
-.container main .input-email {
-    border-radius: 1rem;
+.container main .input-email .arrow-svg {
+    background: var(--Linear-gradients-2);
+    border-radius: 1.2rem;
+    padding: 1rem 2rem 1rem 2rem;
+    position: absolute;
 }
 
-.container main p , .container main h2 span {
+.container main .input-email button {
+    position: absolute;
+    right: 43px;
+    top: -3px;
+    cursor: pointer;
+}
+
+.container main p , .container main h1 span {
     color: var(--Desaturated-Red);
 }
 
-.container main input {
-    
+.container main  .email-text {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 1.5rem;
+    border: 1px solid var(--Desaturated-Red);
+    font: inherit
 }
-
 
 
 .container .hero {
     width: 100%;
+}
+
+form {
+    position: relative;
+    width: 100%;
+}
+
+.container main .email-text {
+    width: 100%;
+ }
+
+.photo-section{
+    background-image: url("./images/hero-desktop.jpg");
+    display: none;
 }
 
 
@@ -71,6 +104,48 @@ body {
 
 
 @media (min-width: 768px) {
+    body {
+        display: flex;
+        /* justify-content: center;
+        align-items: center; */
+    }
+
+    
+    main {
+        padding-left: 3rem;
+        width: 55%;
+        padding-right: 3rem;
+        padding-top: 2.5rem;
+        margin: 0 auto 0 0;
+    }
+
+    .container .hero {
+        display: none;
+    }
+    
+
+    .photo-section{
+        display: block;
+        width: 45%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .container main h1 {
+        padding-left: 0;
+        font-size: 4.75rem;
+        text-align: left;
+    }
+    
+
+    .container main .desc {
+        text-align: left;
+        padding-left: 0;
+        padding-right: 1rem;
+        line-height: 21px;
+    }
+
     
 }
 
